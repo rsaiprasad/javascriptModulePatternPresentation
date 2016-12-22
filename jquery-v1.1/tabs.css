@@ -1,0 +1,66 @@
+.tabs {
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+}
+
+.tabs .tab-item {
+    background: none;
+    color: #222;
+    display: inline-block;
+}
+
+.tabs .tab-item.active {
+    background: #ededed;
+    color: #222;
+}
+
+.tab-data .tab-pane {
+    display: none;
+    background: #ededed;
+    padding: 15px;
+}
+
+.tab-data .tab-pane.active {
+    display: inherit;
+}
+
+.tab-data .tab-pane > p:first-child {
+    margin-top: 0px;
+}
+
+.tabs .tab-item.active .tab-link, .tabs .tab-item.active .tab-link:focus, .tabs .tab-item.active .tab-link:hover {
+    color: #55595c;
+}
+
+.tabs .tab-link {
+    display: inline-block;
+    padding: 10px 15px;
+    color: #0275d8;
+    text-decoration: none;
+    cursor: auto;
+}
+
+/* close button styles */
+.close:focus, .close:hover {
+    text-decoration: none;
+    opacity: .5;
+}
+
+.close {
+    float: right;
+    font-size: 1.5rem;
+    font-weight: 700;
+    line-height: 1;
+    color: #000;
+    text-shadow: 0 1px 0 #fff;
+    opacity: .2;
+}
+
+button.close {
+  padding: 10px 15px 0px 0px;
+  cursor: pointer;
+  background: transparent;
+  border: 0;
+  -webkit-appearance: none;
+}

@@ -1,0 +1,42 @@
+.tabs {
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+}
+
+.tabs .tab-item {
+    background: none;
+    color: #222;
+    display: inline-block;
+}
+
+.tabs .tab-item.active {
+    background: #ededed;
+    color: #222;
+}
+
+.tab-data .tab-pane {
+    display: none;
+    background: #ededed;
+    padding: 15px;
+}
+
+.tab-data .tab-pane.active {
+    display: inherit;
+}
+
+.tab-data .tab-pane > p:first-child {
+    margin-top: 0px;
+}
+
+.tabs .tab-item.active .tab-link, .tabs .tab-item.active .tab-link:focus, .tabs .tab-item.active .tab-link:hover {
+    color: #55595c;
+}
+
+.tabs .tab-link {
+    display: inline-block;
+    padding: 10px 15px;
+    color: #0275d8;
+    text-decoration: none;
+    cursor: auto;
+}

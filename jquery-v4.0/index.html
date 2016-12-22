@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8"/>
+        <title>
+            Basic tabs
+        </title>
+        <link href="styles.css" media="screen" rel="stylesheet" type="text/css"/>
+        <link href="tabs.css" media="screen" rel="stylesheet" type="text/css"/>
+        <script data-require="jquery" data-semver="3.0.0" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0/jquery.js">
+        </script>
+    </head>
+    <body>
+        <div class="container">
+            <h1>
+                Basic tabs
+            </h1>
+            <p>
+                We have to build some basic page with tabs.
+            </p>
+            <!-- Main component for a primary marketing message or call to action -->
+            <!-- Nav tabs -->
+            <ul class="tabs">
+                <li class="tab-item active">
+                    <a class="tab-link" href="#step1">
+                        step1
+                    </a>
+                </li>
+                <li class="tab-item">
+                    <a class="tab-link" href="#step2">
+                        step2
+                    </a>
+                </li>
+                <li class="tab-item">
+                    <a class="tab-link" href="#step3">
+                        step3
+                    </a>
+                </li>
+            </ul>
+            <!-- Tab panes -->
+            <div class="tab-data">
+                <div class="tab-pane active" id="step1">
+                    <h2>
+                        Contact Form - step1
+                    </h2>
+                    <p>
+                        Please provide your information.
+                    </p>
+                    <div>
+                        <form action="" class="basic-grey" method="post">
+                            <label>
+                                <span>
+                                    Your Name :
+                                </span>
+                                <input name="name" placeholder="Your Full Name" type="text"/>
+                            </label>
+                            <label>
+                                <span>
+                                    Your Email :
+                                </span>
+                                <input name="email" placeholder="Valid Email Address" type="email"/>
+                            </label>
+                            <label>
+                                <span>
+                                    Your phone :
+                                </span>
+                                <input name="phone" placeholder="Valid Phone Number" type="phone"/>
+                            </label>
+                            <label>
+                                <span>
+                                </span>
+                                <input class="button" type="button" value="Go to step2 >"/>
+                            </label>
+                        </form>
+                    </div>
+                </div>
+                <div class="tab-pane" id="step2">
+                    <h2>
+                        Contact Form - step2
+                    </h2>
+                    <p>
+                        Please provide your message.
+                    </p>
+                    <div>
+                        <form action="" class="basic-grey" method="post">
+                            <label>
+                                <span>
+                                    Subject :
+                                </span>
+                                <select name="selection">
+                                    <option value="Job Inquiry">
+                                        Job Inquiry
+                                    </option>
+                                    <option value="General Question">
+                                        General Question
+                                    </option>
+                                </select>
+                            </label>
+                            <label>
+                                <span>
+                                    Message :
+                                </span>
+                                <textarea name="message" placeholder="Your Message to Us">
+                                </textarea>
+                            </label>
+                            <label>
+                                <span>
+                                </span>
+                                <input class="button" type="button" value="Go to step3 >"/>
+                            </label>
+                        </form>
+                    </div>
+                </div>
+                <div class="tab-pane" id="step3">
+                </div>
+            </div>
+        </div>
+        <!-- /container -->
+        <script src="tabs.js" type="text/javascript">
+        </script>
+        <script src="script.js" type="text/javascript">
+        </script>
+    </body>
+</html>
